@@ -68,6 +68,7 @@
   flex-direction: column;
   gap: 14px;
   text-align: start;
+  position: relative;
 }
 
 .theme-menu__button {
@@ -77,9 +78,15 @@
   font-size: 14px;
 }
 
-.theme-menu__item::before {
-  margin-right: 6px;
-  width: 14px;
-  height: 14px;
-  background-image: url(../images/triangle.svg);
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  opacity: 0.6;
 }
