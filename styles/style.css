@@ -21,4 +21,7 @@
   font-variation-settings: var(--font-weight-text);
   background-color: var(--background-color);
   color: var(--accent-color);
+  background-image: var(--background-image), var(--background-gradient);
+  background-attachment: fixed;
+  background-size: cover;
 }
