@@ -115,7 +115,13 @@
 .image_container {
   position: relative;
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
+}
+
+.image_container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .section_image {
@@ -123,23 +129,16 @@
   border: 2px solid var(--accent-color);
   display: block;
   border-top: none;
-  
 }
 
 .section_imgage_accent {
   position: absolute;
-  display: flex;
   color: black;
   padding-right: 25px;
   padding-top: 25px;
-  mix-blend-mode: multiply;
   font-family: var(--accent-font);
   font-size: 100px;
-  mix-blend-mode: overlay;
 }
-
-
-
 
 .section_text {
   border: 2px solid var(--accent-color);
