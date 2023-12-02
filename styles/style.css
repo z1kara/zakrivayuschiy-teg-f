@@ -112,17 +112,17 @@
   border: 2px solid var(--accent-color);
 }
 
-.image_container {
+/* .image_container {
   position: relative;
   display: block;
   width: 100%;
   background: url(../images/car.png) ;
-}
-
+} */
 .image_container {
   position: relative;
   display: flex;
   justify-content: flex-end;
+  
 }
 
 .section_image {
@@ -132,18 +132,19 @@
   border-top: none;
 }
 
-.section_imgage_accent {
+.section_image_accent {
   position: absolute;
-  color: black;
+  color: var(--accent-color);
   padding-right: 25px;
   padding-top: 25px;
   font-family: var(--accent-font);
   font-size: 100px;
   mix-blend-mode: hard-light;
-  /* opacity: 0.5; */
-  color: var(--accent-color);
-  text-shadow: white 1px 0 10px;
-
+  opacity: 0.5;
+  text-shadow: 2px 2px 0 var(--background-color),
+               -2px -2px 0 var(--background-color),
+               2px -2px 0 var(--background-color),
+               -2px 2px 0 var(--background-color);
 }
 
 .section_text {
