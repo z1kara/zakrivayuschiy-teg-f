@@ -139,12 +139,21 @@
   padding-top: 25px;
   font-family: var(--accent-font);
   font-size: 100px;
-  mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow: 2px 2px 0 var(--background-color),
-               -2px -2px 0 var(--background-color),
-               2px -2px 0 var(--background-color),
-               -2px 2px 0 var(--background-color);
+  text-shadow: 
+  2px 2px 0 var(--background-color),
+  -2px -2px 0 var(--background-color),
+  2px -2px 0 var(--background-color),
+  -2px 2px 0 var(--background-color);
+  
+  @supports (mix-blend-mode: hard-light) {
+  mix-blend-mode: hard-light;
+  text-shadow:
+  2px 2px 0 var(--background-color),
+  -2px -2px 0 var(--background-color),
+  2px -2px 0 var(--background-color),
+  -2px 2px 0 var(--background-color);
+  }
 }
 
 .section_text {
