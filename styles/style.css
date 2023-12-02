@@ -98,7 +98,7 @@
 
 .section {
   background: var(--background-color);
-
+  position: relative;
 }
 
 .section_title {
@@ -112,17 +112,40 @@
   border: 2px solid var(--accent-color);
 }
 
+.image_container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end
+}
+
 .section_image {
   width: 100%;
   border: 2px solid var(--accent-color);
   display: block;
   border-top: none;
+  
 }
+
+.section_imgage_accent {
+  position: absolute;
+  display: flex;
+  color: black;
+  padding-right: 25px;
+  padding-top: 25px;
+  mix-blend-mode: multiply;
+  font-family: var(--accent-font);
+  font-size: 100px;
+  mix-blend-mode: overlay;
+}
+
+
+
 
 .section_text {
   border: 2px solid var(--accent-color);
   border-top:none;
   padding: 25px;
+  padding-bottom: 23px;
   font-size: 18px;
   font-weight: var(--font-weight-text);
   display:flex;
