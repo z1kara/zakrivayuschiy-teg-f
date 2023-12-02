@@ -114,8 +114,9 @@
 
 .image_container {
   position: relative;
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+  width: 100%;
+  background: url(../images/car.png) ;
 }
 
 .image_container {
@@ -138,6 +139,11 @@
   padding-top: 25px;
   font-family: var(--accent-font);
   font-size: 100px;
+  mix-blend-mode: hard-light;
+  /* opacity: 0.5; */
+  color: var(--accent-color);
+  text-shadow: white 1px 0 10px;
+
 }
 
 .section_text {
