@@ -98,8 +98,7 @@
   left: 5%;
   width: 90%;
   height: 2px;
-  background-color: currentColor; /* Цвет зависит от текущего цвета текста кнопки */
-  
+  background-color: currentColor; 
   animation: expandWidth 0.3s ease;;
 }
 
