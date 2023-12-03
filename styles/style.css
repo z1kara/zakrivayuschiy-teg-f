@@ -274,7 +274,7 @@
 
 
 .button:hover .button__text {
-  color: var(--background-color); /* Измените на нужный цвет текста */
+  color: var(--background-color); 
 }
 
 
