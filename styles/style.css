@@ -71,10 +71,45 @@
   border: 0;
   text-transform: uppercase;
   font-size: 14px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  position: relative;
+ 
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:not(:disabled):hover {
+  opacity: 0.6;
+ 
+}
+
+.theme-menu__button:not(:disabled):focus {
+  opacity: 0.6;
+}
+
+.theme-menu__button:not(:disabled):focus::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background-color: currentColor; /* Цвет зависит от текущего цвета текста кнопки */
+  
+  animation: expandWidth 0.3s ease;;
+}
+
+@keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes triangle {
