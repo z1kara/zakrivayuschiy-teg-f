@@ -238,14 +238,13 @@
   cursor: pointer;
   position: relative;
   background-color: var(--background-color);
+  color: var(--accent-color);
   transition: box-shadow 0.3s ease-in-out;
-  z-index: 1;
-  overflow: hidden; /* Добавляем overflow */
+
 }
 
 .button__text {
   position: relative;
-  z-index: 2;
   color: var(--accent-color);
 }
 
@@ -254,21 +253,8 @@
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
-.button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color);
-  transition: left 0.5s ease-in-out; /* Используем анимацию для свойства left */
-  z-index: 1;
-}
 
-.button:hover::before {
-  left: 0;
-}
+
 
 .card__like-button {
   position: absolute;
