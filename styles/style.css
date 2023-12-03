@@ -74,7 +74,6 @@
   transition: opacity 0.3s ease;
   cursor: pointer;
   position: relative;
- 
 }
 
 .theme-menu__button:disabled {
@@ -84,7 +83,6 @@
 
 .theme-menu__button:not(:disabled):hover {
   opacity: 0.6;
- 
 }
 
 .theme-menu__button:not(:disabled):focus {
@@ -92,27 +90,30 @@
   outline: none;
 }
 
-.theme-menu__button:focus:not(:hover):not(:disabled)::after{
+.theme-menu__button::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 5%;
-  width: 90%;
+  width: 0;
   height: 2px;
-  background-color: currentColor; 
-  animation: expandWidth 0.3s ease;
-  /* lul 0.3s 0.6s ease forwards */
+  background-color: currentColor;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  transform-origin: bottom left;
+  opacity: 0;
 }
 
-@keyframes expandWidth {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-  
+.theme-menu__button:focus:not(:hover)::after,
+.theme-menu__button:focus:not(:hover):focus-visible::after {
+  width: 90%;
+  opacity: 1;
 }
+
+.theme-menu__button:hover::after {
+  width: 0;
+  opacity: 0;
+}
+
 
 /* @keyframes lul {
   0% {
