@@ -114,16 +114,6 @@
   opacity: 0;
 }
 
-
-/* @keyframes lul {
-  0% {
-    width: 90%;
-  }
-  100% {
-    width: 0;
-  }
-} */
-
 @keyframes triangle {
   0% {
     transform: translateX(0);
