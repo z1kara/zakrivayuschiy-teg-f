@@ -139,8 +139,6 @@
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-
-  
 }
 
 .section {
@@ -237,14 +235,38 @@
   justify-content: center;
   font-family: var(--accent-font);
   font-size: 14px;
-  background-color: transparent;
+  
   border: 2px solid var(--accent-color);
   cursor: pointer;
   position: relative;
+  background-color: var(--background-color);
 }
 
 .card__like-button {
   position: absolute;
   left: -47px;
   bottom: 3px;
+}
+
+.footer {
+  max-width: 700px;
+  margin: 0px auto;
+  margin-top: 100px;
+  display: flex;
+  
+  justify-content: center;
+}
+
+.button_footer {
+  margin-top: 50px;
+  width: 335px;
+  height: 51px;
+  align-items: center;
+}
+
+.footer_icon {
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+  line-height: 90%;
 }
