@@ -240,13 +240,14 @@
   background-color: var(--background-color);
   
   transition: box-shadow 0.3s ease-in-out;
-
+ 
 }
 
 .button__text {
   position: relative;
   color: var(--accent-color);
-  transition: color 0.5s ease-in-out;
+  /* transition: color 0.5s ease-in-out; */
+  
 }
 
 .button:focus {
@@ -264,17 +265,21 @@
   background-color: var(--accent-color);
   transform-origin: left center;
   transition: width 0.5s ease-in-out,background-color 0.5s ease-in-out;
+ 
+  
 }
 
 .button:hover::before {
   width: 100%;
   transform: scaleX(1);
-
+  
 }
 
 
 .button:hover .button__text {
-  color: var(--background-color); 
+  color: var(--background-color);
+  mix-blend-mode: difference; 
+  
 }
 
 
@@ -306,4 +311,10 @@
   height: 21px;
   margin-right: 8px;
   line-height: 90%;
+  background-color: var(--accent-color);
+  
+}
+
+.button:hover .footer_icon use {
+  fill: var(--background-color);
 }
