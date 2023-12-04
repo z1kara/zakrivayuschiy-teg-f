@@ -259,9 +259,7 @@
   left: 0;
   background: var(--accent-color);
   transition: width 0.5s ease-in-out;
- 
   transform-origin: left center;
-  
 }
 
 .button:hover::before {
@@ -276,11 +274,9 @@
   color: var(--button-color);
   z-index: 2;
   mix-blend-mode: difference;
-  /* transition: color 0.5s ease-in-out; */
-  
 }
 
-.like-icon {
+.card__icon-button {
   position: absolute;
   top: -2px;
   left: -47px;
@@ -290,7 +286,7 @@
 
 
 
-.button:focus-visible .like-icon {
+.button:focus-visible .card__icon-button  {
   border: 2px solid var(--accent-color) ;
   outline: none;
 }
