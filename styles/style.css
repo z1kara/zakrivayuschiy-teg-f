@@ -314,10 +314,8 @@
   height: 21px;
   margin-right: 8px;
   line-height: 90%;
-  background-color: var(--accent-color);
-  
+  mix-blend-mode: difference;
+  z-index: 10;
+  color: var(--background-color);
 }
 
-.button:hover .footer_icon use {
-  fill: var(--background-color);
-}
