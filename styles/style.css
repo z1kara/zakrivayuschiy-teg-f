@@ -258,7 +258,7 @@
   top: 0;
   left: 0;
   background: var(--accent-color);
-  transition: width 0.5s ease-in-out,background-color 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
  
   transform-origin: left center;
   
@@ -279,7 +279,7 @@
 
 .button__text {
   position: relative;
-  color: var(--background-color);
+  color: var(--button-color);
   z-index: 2;
   mix-blend-mode: difference;
   /* transition: color 0.5s ease-in-out; */
@@ -316,6 +316,8 @@
   line-height: 90%;
   mix-blend-mode: difference;
   z-index: 2;
-  color: var(--background-color);
+  color: var(--button-color);
 }
+
+
 
