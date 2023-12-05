@@ -94,8 +94,9 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 0%;
   width: 0;
+  bottom: -3px;
   height: 2px;
   background-color: currentColor;
   transition: width 0.3s ease, opacity 0.3s ease;
@@ -105,7 +106,7 @@
 
 .theme-menu__button:focus:not(:hover)::after,
 .theme-menu__button:focus:not(:hover):focus-visible::after {
-  width: 90%;
+  width: 100%;
   opacity: 1;
 }
 
@@ -225,10 +226,21 @@
 /* .section_text > *:last-child {
   margin-bottom: 0px;
 } */ 
-.button {
+
+
+.section__button_control {
+  align-self: flex-end;
+  display: flex;
+  gap: 12px;
+  
+}
+
+
+
+.card__like-button {
   width: 130px;
   height: 38px;
-  align-self: flex-end;
+ 
   display: flex;
   padding: 9px 17px;
   justify-content: center;
@@ -245,12 +257,12 @@
 
 
 
-.button:focus {
+.card__like-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
-.button::before {
+.card__like-button::before {
   content: "";
   position: absolute;
   width: 0;
@@ -262,7 +274,7 @@
   transform-origin: left center;
 }
 
-.button:hover::before {
+.card__like-button:hover::before {
   width: 100%;
   transform: scaleX(1);
   
@@ -276,22 +288,29 @@
   mix-blend-mode: difference;
 }
 
+
+
 .card__icon-button {
-  position: absolute;
-  top: -2px;
-  left: -47px;
+  outline: none;
   border: 2px solid transparent;
   transition: border 0.3s ease;
+  background-color: transparent;
+  width: 42px;
+  height: 38px;
+  align-items: center;
+  
 }
 
 
 
-.button:focus-visible .card__icon-button  {
+.card__icon-button:focus-visible {
   border: 2px solid var(--accent-color) ;
   outline: none;
+} 
+
+.like-icon {
+
 }
-
-
 
 .footer {
   max-width: 700px;
