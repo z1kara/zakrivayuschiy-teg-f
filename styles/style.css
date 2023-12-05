@@ -129,7 +129,7 @@
   content: '▶';
   display: inline-block;
   position: absolute;
-  left: -14px;
+  left: -20px;
   opacity: 0.6;
   animation: triangle 0.5s ease-in-out infinite alternate;
 }
