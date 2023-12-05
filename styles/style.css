@@ -231,7 +231,7 @@
 .section__button_control {
   align-self: flex-end;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   
 }
 
@@ -295,8 +295,8 @@
   border: 2px solid transparent;
   transition: border 0.3s ease;
   background-color: transparent;
-  width: 42px;
-  height: 38px;
+  width: 39px;
+  height: 36px;
   align-items: center;
   
 }
