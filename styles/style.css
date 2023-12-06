@@ -298,7 +298,7 @@
   width: 39px;
   height: 36px;
   align-items: center;
-  
+  cursor: pointer;
 }
 
 
@@ -309,7 +309,21 @@
 } 
 
 .like-icon {
+  
+}
 
+
+
+.sparks {
+  opacity: 0;
+}
+
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--accent-color);
 }
 
 .footer {

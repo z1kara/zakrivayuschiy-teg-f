@@ -14,6 +14,8 @@
   repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px);
   --background-gradient: linear-gradient(to bottom, #e7e7e7, #1a1a1a);
   --button-color: #FFF;
+  --contour-color: black;
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,6 +28,7 @@
   repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px);
   --background-gradient: linear-gradient(to bottom, #e7e7e7, #1a1a1a);
   --button-color: #FFF;
+  --contour-color: black;
   }
 }
 
@@ -38,6 +41,7 @@
   repeating-linear-gradient(to bottom, #000 0, #000 2px, transparent 2px, transparent 4px);
   --background-gradient: linear-gradient(to bottom, #007f0c, #004306);
   --button-color: #00CC14;
+  --contour-color: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,5 +54,6 @@
   repeating-linear-gradient(to bottom, #000 0, #000 2px, transparent 2px, transparent 4px);
   --background-gradient: linear-gradient(to bottom, #007f0c, #004306);
   --button-color: #00CC14;
+  --contour-color: #00CC14;
   }
 }
