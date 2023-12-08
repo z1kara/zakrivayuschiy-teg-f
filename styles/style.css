@@ -263,6 +263,7 @@
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
+
 .card__like-button::before {
   content: "";
   position: absolute;
@@ -300,6 +301,7 @@
   height: 36px;
   align-items: center;
   cursor: pointer;
+  display: flex;
 }
 
 
