@@ -343,6 +343,10 @@
   fill: #FF0000;
 }
 
+.card__icon-button:active .contour {
+  fill: #FF0000;
+}
+
 .card__icon-button .is-liked .main-body {
   fill: #FF0000;
 }
@@ -385,20 +389,7 @@
   }
 }
 
-.card__icon-button.is-liked .sparks {
-  animation: sparkles 0.3s linear;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
-}
 
-@keyframes sparkles {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 
 
 .card__icon-button:not(.is-liked) .contour {
@@ -409,13 +400,8 @@
   fill: var(--contour-color);
 }
 
-.card__icon-button .sparks {
-  opacity: 0;
-  transition: opacity 0.3s linear alternate;
-}
-
-.card__icon-button .is-liked .sparks {
-  opacity: 100%;
+.card__icon-button .is-liked:hover .contour {
+  fill: #FF0000;
 }
 
 
