@@ -295,7 +295,7 @@
       </section>
     </main>
     <footer class="footer">
-      <button  type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id" class="card__like-button button_footer">
+      <button  type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id" class="button_footer">
         <svg class="footer_icon" >
           <use href="./images/floppy.svg#floppy" fill="currentColor"></use> 
         </svg>
@@ -303,8 +303,11 @@
           Сохранить на память
         </span>
       </button>
-      <dialog id="dialog-id" open>
-        <form class="" method="dialog">
+      <dialog id="dialog-id" >
+        <form class="dialog-form" method="dialog">
+          <svg class="dialog_icon"  viewBox="0 0 21 21">
+            <use href="./images/floppy.svg#floppy" fill="currentColor"></use> 
+          </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </form>
         <button class="dialog__button" type="button" onclick="window['dialog-id'].close()">
