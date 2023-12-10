@@ -177,6 +177,8 @@
   border: 2px solid var(--accent-color);
   display: block;
   border-top: none;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .section_image_accent {
