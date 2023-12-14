@@ -26,6 +26,11 @@
   background-size: cover;
 }
 
+body {
+  font-variation-settings: 'wght' 400, 'wght' 785; 
+}
+
+
 .header {
   
   background: var(--background-color);

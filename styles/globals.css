@@ -12,6 +12,12 @@ body {
   margin: 0;
 }
 
+@supports (font-variation-settings: normal) {
+  body {
+      font-family: var(--main-font), sans-serif;
+  }
+} 
+
 h1,
 h2,
 h3,
@@ -56,3 +62,4 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
