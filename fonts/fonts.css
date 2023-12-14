@@ -9,6 +9,44 @@
   font-weight: 400 785;
 }
 
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  src:
+    local('Inter'),
+    url(./Inter-Variable.woff2) format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  src:
+    local('Inter'),
+    url(./Inter-Variable.woff2) format('woff2');
+    font-weight: 465;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  src:
+    local('Inter'),
+    url(./Inter-Variable.woff2) format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  src:
+    local('Inter'),
+    url(./Inter-Variable.woff2) format('woff2');
+    font-weight: 785;
+}
+
+
 @font-face {
   font-family: 'PressStart2P';
   src: url(./PressStart2P-Regular.woff) format(woff);

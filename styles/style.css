@@ -14,10 +14,19 @@
 
 */
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: var(--main-font), sans-serif;
+  }
+} 
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100;
-  font-family: var(--main-font), sans-serif;
   font-variation-settings: var(--font-weight-text);
   background-color: var(--background-color);
   color: var(--accent-color);
@@ -25,11 +34,6 @@
   background-attachment: fixed;
   background-size: cover;
 }
-
-body {
-  font-variation-settings: 'wght' 400, 'wght' 785; 
-}
-
 
 .header {
   
