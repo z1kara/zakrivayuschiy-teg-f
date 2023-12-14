@@ -93,7 +93,6 @@
 .theme-menu__button::after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 0%;
   width: 0;
   bottom: -3px;
@@ -187,7 +186,6 @@
   padding-right: 25px;
   padding-top: 25px;
   font-family: var(--accent-font), sans-serif;
-  font-size: 100px;
   opacity: 0.5;
   font-size: 14px;
   text-shadow: 
@@ -390,7 +388,6 @@
 
 .sparks {
   opacity: 0;
-  
 }
 
 .card__icon-button .is-liked .sparks {
