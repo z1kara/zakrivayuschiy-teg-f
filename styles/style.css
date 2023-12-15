@@ -587,6 +587,7 @@ dialog::backdrop {
   text-transform: uppercase;
   font-weight: var(--font-weight-text);
   position: relative;
+  cursor: pointer;
 }
 
 
