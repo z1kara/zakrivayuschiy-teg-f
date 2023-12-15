@@ -15,20 +15,20 @@
 */
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
   body {
     font-family: var(--main-font), sans-serif;
-    font-variation-settings: 'wght' var(--font-weight-text);
+    font-variation-settings: "wght" var(--font-weight-text);
   }
-} 
+}
 
 .page {
   min-inline-size: 320px;
   min-block-size: 100;
-  font-variation-settings: 'wght' var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text);
   background-color: var(--background-color);
   color: var(--accent-color);
   background-image: var(--background-image), var(--background-gradient);
@@ -37,24 +37,22 @@ body {
 }
 
 .header {
-  
   background: var(--background-color);
   display: flex;
   min-height: 368px;
   flex-direction: column;
   align-items: center;
   border: 2px solid var(--accent-color);
-  font-family: var(--accent-font), 'Inter' ,sans-serif;
+  font-family: var(--accent-font), "Inter", sans-serif;
   text-transform: uppercase;
   max-width: 700px;
   margin: 0px auto;
   margin-top: 100px;
-  
 }
 
 .title {
   margin-top: 136px;
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .title_description {
@@ -62,7 +60,6 @@ body {
   margin-bottom: 25px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
-
 
 .header__theme-menu {
   margin-left: 18px;
@@ -133,9 +130,8 @@ body {
   }
 }
 
-
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   display: inline-block;
   position: absolute;
   left: -20px;
@@ -158,7 +154,7 @@ body {
 }
 
 .section_title {
-  font-variation-settings: 'wght' var(--font-weight-title-card);
+  font-variation-settings: "wght" var(--font-weight-title-card);
   line-height: normal;
   padding-left: 10px;
   font-size: 18px;
@@ -168,17 +164,10 @@ body {
   border: 2px solid var(--accent-color);
 }
 
-/* .image_container {
-  position: relative;
-  display: block;
-  width: 100%;
-  background: url(../images/car.png) ;
-} */
 .image_container {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  
 }
 
 .section_image {
@@ -239,18 +228,19 @@ body {
   color: var(--accent-color);
   padding-right: 25px;
   padding-top: 25px;
-  font-family: var(--accent-font), 'Inter', sans-serif;
+  font-family: var(--accent-font), "Inter", sans-serif;
   opacity: 0.5;
   font-size: 14px;
   mix-blend-mode: hard-light;
-  text-shadow: 
-  1px 1px 0 var(--background-color),
-  -1px -1px 0 var(--background-color),
-  1px -1px 0 var(--background-color),
-  -1px 1px 0 var(--background-color);
+  text-shadow: 1px 1px 0 var(--background-color),
+    -1px -1px 0 var(--background-color), 1px -1px 0 var(--background-color),
+    -1px 1px 0 var(--background-color);
 }
 
-@supports ((-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))) {
+@supports (
+  (-webkit-text-stroke: 1px var(--background-color)) or
+    (text-stroke: 1px var(--background-color))
+) {
   .section_image_accent {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--background-color);
@@ -260,63 +250,43 @@ body {
 
 .section_text {
   border: 2px solid var(--accent-color);
-  border-top:none;
+  border-top: none;
   padding: 25px;
   padding-bottom: 23px;
   font-size: 18px;
-  font-variation-settings: 'wght' var(--font-weight-text);
-  display:flex;
+  font-variation-settings: "wght" var(--font-weight-text);
+  display: flex;
   flex-direction: column;
   gap: 27px;
 }
-
-/* .section_text > * {
-  margin-bottom: 27px; 
-}
-
-/* .section_text > *:nth-child(2){
-  margin-bottom: 25px; /* Отступ для последнего элемента (кнопки) 
-} */
-
-/* .section_text > *:last-child {
-  margin-bottom: 0px;
-} */ 
-
 
 .section__button_control {
   align-self: flex-end;
   display: flex;
   gap: 10px;
-  
 }
-
-
 
 .card__like-button {
   width: 130px;
   height: 38px;
- 
+
   display: flex;
   padding: 9px 17px;
   justify-content: center;
-  font-family: var(--accent-font), 'Inter', sans-serif;
+  font-family: var(--accent-font), "Inter", sans-serif;
   font-size: 14px;
   border: 2px solid var(--accent-color);
   cursor: pointer;
   position: relative;
   background-color: var(--background-color);
-  
+
   transition: box-shadow 0.3s ease-in-out;
- 
 }
-
-
 
 .card__like-button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
-
 
 .card__like-button::before {
   content: "";
@@ -333,9 +303,7 @@ body {
 .card__like-button:hover::before {
   width: 100%;
   transform: scaleX(1);
-  
 }
-
 
 .button__text {
   position: relative;
@@ -343,8 +311,6 @@ body {
   z-index: 2;
   mix-blend-mode: difference;
 }
-
-
 
 .card__icon-button {
   outline: none;
@@ -358,12 +324,10 @@ body {
   display: flex;
 }
 
-
-
 .card__icon-button:focus-visible {
-  border: 2px solid var(--accent-color) ;
+  border: 2px solid var(--accent-color);
   outline: none;
-} 
+}
 
 .sparks {
   opacity: 0;
@@ -387,19 +351,19 @@ body {
 }
 
 .card__icon-button:active .core {
-  fill: #FF0000;
+  fill: #ff0000;
 }
 
 .card__icon-button:active .main-body {
-  fill: #FF0000;
+  fill: #ff0000;
 }
 
 .card__icon-button:active .contour {
-  fill: #FF0000;
+  fill: #ff0000;
 }
 
 .card__icon-button .is-liked .main-body {
-  fill: #FF0000;
+  fill: #ff0000;
 }
 
 .card__icon-button .is-liked:hover .main-body {
@@ -410,14 +374,12 @@ body {
   fill: var(--accent-color);
 }
 
-
-
 .card__icon-button .is-liked .core {
-  fill: #FF0000;
+  fill: #ff0000;
 }
 
 .card__icon-button .is-liked .contour {
-  fill: #FF0000;
+  fill: #ff0000;
 }
 
 .heart {
@@ -432,7 +394,8 @@ body {
 }
 
 @keyframes heartbeat {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -454,7 +417,6 @@ body {
   }
 }
 
-
 .card__icon-button:not(.is-liked) .contour {
   transition: fill 0.1s linear;
 }
@@ -464,16 +426,15 @@ body {
 }
 
 .card__icon-button .is-liked:hover .contour {
-  fill: #FF0000;
+  fill: #ff0000;
 }
-
 
 .footer {
   max-width: 700px;
   margin: 0px auto;
   margin-top: 50px;
   display: flex;
-  
+
   justify-content: center;
 }
 
@@ -481,26 +442,24 @@ body {
   display: flex;
   padding: 9px 17px;
   justify-content: center;
-  font-family: var(--accent-font), 'Inter', sans-serif;
+  font-family: var(--accent-font), "Inter", sans-serif;
   font-size: 14px;
   border: 2px solid var(--accent-color);
   cursor: pointer;
   position: relative;
   background-color: var(--background-color);
-  
+
   transition: box-shadow 0.3s ease-in-out;
   margin-bottom: 103px;
   width: 339px;
   height: 55px;
   align-items: center;
-  
 }
 
 .button_footer:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
-
 
 .button_footer::before {
   content: "";
@@ -517,9 +476,7 @@ body {
 .button_footer:hover::before {
   width: 100%;
   transform: scaleX(1);
-  
 }
-
 
 .footer_icon {
   width: 21px;
@@ -543,7 +500,7 @@ dialog {
   inset: 0;
   align-items: center;
   border: 2px solid var(--accent-color);
-  font-family: var(--accent-font), 'Inter', sans-serif;
+  font-family: var(--accent-font), "Inter", sans-serif;
   background-color: var(--background-color);
   transition: opacity 0.3s ease-in-out;
   inline-size: clamp(341px, 24vw, 357px);
@@ -555,13 +512,13 @@ dialog {
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.3);
   backdrop-filter: blur(7px);
-} 
+}
 
 .dialog-form {
   display: grid;
   gap: 20px;
   margin: 30px;
-  grid-template-columns: repeat(2,auto);
+  grid-template-columns: repeat(2, auto);
 }
 
 .dialog_icon {
@@ -569,7 +526,6 @@ dialog::backdrop {
   height: 39px;
   color: var(--accent-color);
 }
-
 
 .dialog_button {
   margin: 0px 30px;
@@ -582,20 +538,18 @@ dialog::backdrop {
   align-items: center;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
-  font-family: var(--accent-font), 'Inter', sans-serif;
+  font-family: var(--accent-font), "Inter", sans-serif;
   line-height: 90%;
   text-transform: uppercase;
-  font-variation-settings: 'wght' var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text);
   position: relative;
   cursor: pointer;
 }
-
 
 .dialog_button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
-
 
 .dialog_button::before {
   content: "";
