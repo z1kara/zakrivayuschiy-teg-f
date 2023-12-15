@@ -190,6 +190,16 @@ body {
   aspect-ratio: 1 / 1;
 }
 
+.filter-blur {
+  filter: blur(2px) contrast(150%);
+  transition: filter 1s ease;
+}
+
+.section_image:hover {
+  filter: none;
+  transition: filter 1s ease;
+}
+
 .section_image_accent {
   position: absolute;
   color: var(--accent-color);
@@ -198,19 +208,19 @@ body {
   font-family: var(--accent-font), sans-serif;
   opacity: 0.5;
   font-size: 14px;
+  mix-blend-mode: hard-light;
   text-shadow: 
   1px 1px 0 var(--background-color),
   -1px -1px 0 var(--background-color),
   1px -1px 0 var(--background-color),
   -1px 1px 0 var(--background-color);
-  
-  @supports (mix-blend-mode: hard-light) {
-  mix-blend-mode: hard-light;
-  text-shadow:
-  1px 1px 0 var(--background-color),
-  -1px -1px 0 var(--background-color),
-  1px -1px 0 var(--background-color),
-  -1px 1px 0 var(--background-color);
+}
+
+@supports ((-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))) {
+  .section_image_accent {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stoke: 1px var(--background-color);
   }
 }
 
