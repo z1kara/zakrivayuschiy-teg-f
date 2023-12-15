@@ -8,7 +8,7 @@
   url(./Inter-Variable.woff2) format('woff2-variations');
   font-weight: 400 785;
 }
-/* 
+
 
 @font-face {
   font-display: swap;
@@ -44,7 +44,7 @@
     local('Inter'),
     url(./Inter-Variable.woff2) format('woff2');
     font-weight: 785;
-} */
+}
 
 
 @font-face {
