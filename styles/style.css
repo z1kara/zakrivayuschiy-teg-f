@@ -162,46 +162,34 @@
 
 .filter-blur {
   filter: blur(2px) contrast(150%);
-  transition: filter 1s ease;
 }
 
 .filter-grayscale {
   filter: grayscale(80%);
-  transition: filter 1s ease;
 }
 
 .filter-hue {
   filter: hue-rotate(90deg);
-  transition: filter 1s ease;
 }
 
 .filter-invert {
   filter: invert(75%);
-  transition: filter 1s ease;
 }
 
 .filter-opacity {
   filter: opacity(50%);
-  transition: filter 1s ease;
 }
 
 .filter-saturate {
   filter: saturate(30%);
-  transition: filter 1s ease;
 }
 
 .filter-sepia {
   filter: sepia(60%);
-  transition: filter 1s ease;
 }
 
 .filter-drop-shadow {
   filter: drop-shadow(5px 5px 5px var(--accent-color));
-  transition: filter 1s ease;
-}
-
-.section_image:hover {
-  filter: none;
 }
 
 .section_image_accent {
