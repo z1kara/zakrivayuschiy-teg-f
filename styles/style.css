@@ -243,7 +243,7 @@
   display: flex;
   padding: 9px 17px;
   justify-content: center;
-  font-family: var(--accent-font) sans-serif;
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   border: 2px solid var(--accent-color);
   cursor: pointer;
