@@ -143,17 +143,18 @@
   display: flex;
   align-items: center;
   border: 2px solid var(--accent-color);
+  border-bottom: 0px;
 }
 
 .image_container {
   position: relative;
   display: flex;
   justify-content: flex-end;
+  border: 2px solid var(--accent-color);
 }
 
 .section_image {
   width: 100%;
-  border: 2px solid var(--accent-color);
   display: block;
   border-top: none;
   object-fit: cover;
