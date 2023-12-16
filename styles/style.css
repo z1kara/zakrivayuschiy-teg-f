@@ -299,16 +299,10 @@
   outline: none;
 }
 
-.footer {
+.button_save {
   max-width: 700px;
   margin: 0px auto;
   margin-top: 50px;
-  display: flex;
-
-  justify-content: center;
-}
-
-.button_footer {
   display: flex;
   padding: 9px 17px;
   justify-content: center;
@@ -326,12 +320,12 @@
   align-items: center;
 }
 
-.button_footer:focus-visible {
+.button_save:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
-.button_footer::before {
+.button_save::before {
   content: "";
   position: absolute;
   width: 0;
@@ -343,12 +337,12 @@
   transform-origin: left center;
 }
 
-.button_footer:hover::before {
+.button_save:hover::before {
   width: 100%;
   transform: scaleX(1);
 }
 
-.footer_icon {
+.button_save-icon {
   width: 21px;
   height: 21px;
   margin-right: 8px;
@@ -452,14 +446,14 @@ dialog::backdrop {
     padding-bottom: 6px;
   }
 
-  .button_footer {
+  .button_save {
     width: 310px;
     height: 84px;
     flex-direction: column;
     gap: 8px;
   }
 
-  .footer_icon {
+  .button_save-icon {
   width: 28px;
   height: 28px;
   margin-right: 0px;
