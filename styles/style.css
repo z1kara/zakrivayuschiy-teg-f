@@ -14,20 +14,10 @@
 
 */
 
-body {
-  font-family: "Inter", sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: var(--main-font), sans-serif;
-    font-variation-settings: "wght" var(--font-weight-text);
-  }
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100;
+  font-family: var(--main-font);
   font-variation-settings: "wght" var(--font-weight-text);
   background-color: var(--background-color);
   color: var(--accent-color);
@@ -88,11 +78,11 @@ body {
   pointer-events: none;
 }
 
-.theme-menu__button:not(:disabled):hover {
+.theme-menu__button:hover {
   opacity: 0.6;
 }
 
-.theme-menu__button:not(:disabled):focus {
+.theme-menu__button:focus {
   opacity: 0.6;
   outline: none;
 }
@@ -587,5 +577,11 @@ dialog::backdrop {
     height: 84px;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .footer_icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 0px;
   }
 }
