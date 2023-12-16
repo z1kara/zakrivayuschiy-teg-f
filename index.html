@@ -550,31 +550,31 @@
       </section>
     </main>
     <button
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-        class="button_save"
-      >
-        <svg class="button_save-icon" viewBox="0 0 21 21">
+      type="button"
+      onclick="window['dialog-id'].showModal()"
+      aria-controls="dialog-id"
+      class="button_save"
+    >
+      <svg class="button_save-icon" viewBox="0 0 21 21">
+        <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
+      </svg>
+      <span class="button__text"> Сохранить на память </span>
+    </button>
+    <dialog id="dialog-id">
+      <form class="dialog-form" method="dialog">
+        <svg class="dialog_icon" viewBox="0 0 21 21">
           <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
         </svg>
-        <span class="button__text"> Сохранить на память </span>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+      </form>
+      <button
+        class="dialog_button"
+        type="button"
+        onclick="window['dialog-id'].close()"
+      >
+        <span class="button__text"> ок </span>
       </button>
-      <dialog id="dialog-id">
-        <form class="dialog-form" method="dialog">
-          <svg class="dialog_icon" viewBox="0 0 21 21">
-            <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
-          </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </form>
-        <button
-          class="dialog_button"
-          type="button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="button__text"> ок </span>
-        </button>
-      </dialog>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

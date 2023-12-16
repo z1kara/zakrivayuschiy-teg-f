@@ -454,8 +454,8 @@ dialog::backdrop {
   }
 
   .button_save-icon {
-  width: 28px;
-  height: 28px;
-  margin-right: 0px;
+    width: 28px;
+    height: 28px;
+    margin-right: 0px;
   }
 }
