@@ -111,15 +111,6 @@
   opacity: 0;
 }
 
-@keyframes triangle {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(4px);
-  }
-}
-
 .theme-menu__button:disabled::before {
   content: "▶";
   display: inline-block;
@@ -383,28 +374,9 @@
   animation-delay: 0.1s;
 }
 
-@keyframes heartbeat {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-}
-
 .card__icon-button .is-liked .sparks {
   animation: sparks 0.3s ease-in-out;
   animation-delay: 0.3s;
-}
-
-@keyframes sparks {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .card__icon-button:not(.is-liked) .contour {
