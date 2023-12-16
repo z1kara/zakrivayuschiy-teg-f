@@ -22,6 +22,88 @@
   }
 }
 
+
+.sparks {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--accent-color);
+}
+
+.main-body {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--accent-color);
+}
+
+.card__icon-button:active .core {
+  fill: #ff0000;
+}
+
+.card__icon-button:active .main-body {
+  fill: #ff0000;
+}
+
+.card__icon-button:active .contour {
+  fill: #ff0000;
+}
+
+.card__icon-button .is-liked .main-body {
+  fill: #ff0000;
+}
+
+.card__icon-button .is-liked:hover .main-body {
+  fill: var(--accent-color);
+}
+
+.card__icon-button .is-liked:hover .core {
+  fill: var(--accent-color);
+}
+
+.card__icon-button .is-liked .core {
+  fill: #ff0000;
+}
+
+.card__icon-button .is-liked .contour {
+  fill: #ff0000;
+}
+
+.heart {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.card__icon-button .is-liked .heart {
+  animation: heartbeat 0.3s ease-in-out;
+  animation-delay: 0.1s;
+}
+
+.card__icon-button .is-liked .sparks {
+  animation: sparks 0.3s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.card__icon-button:not(.is-liked) .contour {
+  transition: fill 0.1s linear;
+}
+
+.card__icon-button:not(.is-liked):hover .contour {
+  fill: var(--contour-color);
+}
+
+.card__icon-button .is-liked:hover .contour {
+  fill: #ff0000;
+}
+
 @keyframes heartbeat {
   0%,
   100% {
